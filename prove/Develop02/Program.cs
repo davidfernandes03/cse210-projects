@@ -1,7 +1,7 @@
 using System;
 
 // Exceeding Requirements - A new option to save favorites answers
-// A new method DisplayFavorites() in Jounnal.cs
+// A new method DisplayFavorites() in Journal.cs
 // Option 5 display only the favorite entries
 class Program
 {
