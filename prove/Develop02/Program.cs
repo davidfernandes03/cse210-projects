@@ -69,6 +69,8 @@ class Program
                 
                 case "4":
                     // Save
+                    // WARNING - If the saved file doesn't appear with the other files, it is probably inside the 'bin' directory
+                    // Location - Develop02/bin/Debug/net8.0
                     Console.Write("What is the filename? ");
                     string saveFileName = Console.ReadLine();
                     journal.SaveToFile(saveFileName);

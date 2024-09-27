@@ -29,6 +29,8 @@ public class Journal
     }
 
     // Saving to a file
+    // WARNING - If the saved file doesn't appear with the other files, it is probably inside the 'bin' directory
+    // Location - Develop02/bin/Debug/net8.0
     public void SaveToFile(string fileName)
     {
         using (StreamWriter outputFile = new StreamWriter(fileName))
@@ -38,7 +40,6 @@ public class Journal
                 outputFile.WriteLine($"{entry._date}|{entry._promptText}|{entry._entryText}");
             }
         }
-        Console.WriteLine($"Entries saved to: {Path.GetFullPath(fileName)}");
     }
 
     // Loading a file
@@ -57,6 +58,7 @@ public class Journal
         }
     }
 
+    // Additional Content
     public void DisplayFavorites()
     {
         Console.WriteLine("Favorite Entries:");
